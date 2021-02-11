@@ -61,7 +61,10 @@ if _git_changed; then
   else
     # Calling method to configure the git environemnt
     _git_setup
-
+    
+    # Switch to the actual branch
+    git checkout $INPUT_BRANCH || echo "Problem checking out the specified branch: $INPUT_BRANCH"
+    
     if $INPUT_ONLY_CHANGED; then
       # --diff-filter=d excludes deleted files
       for file in $(git diff --name-only --diff-filter=d HEAD^..HEAD)
