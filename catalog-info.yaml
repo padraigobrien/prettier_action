@@ -5,6 +5,7 @@ metadata:
   name: prettier-service
   annotations:
     github.com/project-slug: padraigobrien/prettier_action
+    backstage.io/techdocs-ref: url:https://github.com/padraigobrien/prettier_action
 spec:
   type: service
   lifecycle: experimental
