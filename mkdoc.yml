@@ -1,0 +1,7 @@
+site_name: 'Prettier Action'
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core

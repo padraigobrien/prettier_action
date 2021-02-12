@@ -1,0 +1,11 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: prettier-service
+  annotations:
+    github.com/project-slug: padraigobrien/prettier_action
+spec:
+  type: service
+  lifecycle: experimental
+  owner: 'user:padraig@roadie.io'
